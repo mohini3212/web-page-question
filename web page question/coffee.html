@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+body{
+    background-color: black;
+}
+    .container {
+        width: 100%;
+        background-image: linear-gradient(rgba(7, 0, 0, 0.65), rgba(7, 0, 0, 0.65)), url("coffeeimage.avif");
+        background-size: cover;
+        background-position: center;
+        padding: 14px 8%;
+
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: larger;
+        color: aliceblue;
+        font-weight: 320px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        width: 100%;
+        list-style: none;
+        text-align: right;
+        padding-right: 60px;
+        font-weight: 320px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px 20px;
+
+    }
+
+    nav ul li a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .btn {
+        display: flex;
+        background-color: aliceblue;
+        color: rgb(14, 14, 15);
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px 20px;
+        bottom: 0;
+        outline: 0;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .content {
+        color: aliceblue;
+        margin-top: 14%;
+        max-width: 620px;
+    }
+
+    .content h1 {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 85px;
+        margin-bottom: 25px;
+    }
+
+    .content p {
+        margin-bottom: 5px;
+
+    }
+
+    /* about css */
+    .about-container h2 {
+        font-size: 40px;
+        color: aliceblue;
+        margin-top: 70px;
+       text-align: center;
+    }
+
+    .about-container .about-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-container .about-content {
+        font-size: 16px;
+        margin: 16px 0;
+        width: 100%;
+    }
+    .about-container .about-content h3 {
+        color: aliceblue;
+        text-align: justify;
+    }
+    .about-container .about-content p{
+        color: aliceblue;
+        font-size: 16px;
+        text-align: justify;
+        width: 55%;
+        margin: 16px 0px;
+    }
+    .about-container .about-content img{
+        max-width: 320px;
+        border-radius: 8px;
+        box-shadow: 8px 8px gray;
+
+    }
+    .menu h2{
+        color: aliceblue;
+        font-size: 40px;
+        text-align: center;
+    }
+    .menu .card-section {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu .card-section .card{
+        width: 396px;
+        margin: 12px;
+        padding: 16px;
+        border: 1px solid gray;
+        border-radius: 8px;
+color: aliceblue;
+    }
+    .menu .card-section .card img{
+       max-width:-webkit-fill-available ;
+        height: 230px;
+        border-radius: 8px;
+    }
+    .menu .card-section .card .card-body h3{
+        margin-bottom: 8px;
+    }
+    .menu .card-section .card .card-body p{}
+
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">coffee</div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Start Your Day With A <br> Fresh Coffee</h1>
+            <p> coffee is a popular and beloved beverage enjoyed by</p>
+            <p>people around the world.</p>
+        </div>
+        <button class="btn">order now</button>
+    </div>
+    <!-- About Us Started -->
+
+    <div class="about-container">
+        <h2>ABOUT US</h2>
+        <div class=" container about-content">
+            <div>
+                <h3>What make our coffee special?</h3>
+                <p>At Awesome Coffee Co., we are passionate about delivering the highest quality coffee beans from around
+                    the world. Our expert team carefully selects and roasts each bean to perfection, ensuring a rich and
+                    flavorful cup every time.
+                Our commitment to sustainability drives everything we do. From working directly with farmers to
+                    supporting environmentally friendly practices, we strive to make a positive impact on both the coffee
+                    industry and the planet.</p>
+                <p>Join us on our journey to explore the wonderful world of coffee.</p>
+            </div>
+           
+            <img src="coffee2image.jpg" alt="">
+
+
+
+        </div>
+    </div>
+    <!-- About section ends -->
+    <!-- menu start -->
+    <div class="menu">
+        <h2>Menu</h2>
+        <div class="card-section">
+            <div class="card">
+                <img src="coffee1image.avif" alt="Espresso">
+                <div class="card-body">
+                    <h3>Espresso</h3>
+                    <p>A shot of concentrated coffee made by forcing hot water through finely-ground coffee beans.</p>
+                    <p>Price: $2.50</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="coffee1image.avif" alt="Cappuccino">
+                <div class="card-body">
+                    <h3>Cappuccino</h3>
+                    <p>Equal parts espresso, steamed milk, and milk foam, topped with a sprinkle of cocoa powder.</p>
+                    <p>Price: $3.50</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="coffee1image.avif" alt="Latte">
+                <div class="card-body"></div>
+                <h3>Latte</h3>
+                <p>A coffee drink made with espresso and steamed milk, often topped with a small amount of foam.</p>
+                <p>Price: $4.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+                
+            
+            
+            <!-- menu end-->
+</body>
+
+</html>

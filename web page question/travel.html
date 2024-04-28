@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLe>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        /* creating variables */
+        :root {
+            --primary-color: #48385b;
+            --secondary-color: #6a516a;
+            --white-color: #fff;
+            --grey-color: #9c9a9abe;
+            --black-color: #282727be;
+            --primary-font: font-family: "Poppins", sans-serif;
+            --secondary-font: font-family: "Roboto", sans-serif;
+        }
+body{
+    font-style: var(--primary-font);
+}
+        * {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(126, 91, 144, 0.65), rgba(87, 77, 92, 0.65)), url("imageof boat.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 14px 8%;
+        }
+
+
+        nav {
+            width: 100%;
+            display: flex;
+            color: var(--white-color);
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+.logo{
+    max-width: 120PX;
+    
+}
+.logo a{
+    background-image: transparent;
+} 
+
+        nav ul {
+            list-style: none;
+            width: 100%;
+            align-items: RIGHT;
+            text-align: right;
+            padding-right: 60px;
+            font-size: 25px;
+            font-weight: 320px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            font-style: var(--secondary-font);
+            text-decoration: none;
+            color: var(--white-color);
+        }
+
+        nav ul li a:hover {
+
+            border-bottom: 3px solid black;
+            transition: 0.5s;
+        }
+
+        .btn {
+            margin-top: 25px;
+            display: flex;
+            text-align: center;
+            border-radius: 5px 5px;
+            color: var(--white-color);
+            background-color: rgb(119, 194, 194);
+            font-weight: 500;
+            padding: 10px 20px;
+            outline: 0;
+            bottom: 0;
+            border: none;
+        }
+
+        .btn:hover {
+            background: rgb(61, 97, 97);
+            transition: 0.5s;
+        }
+
+        .content {
+            margin-top: 14%;
+            color: var(--white-color);
+            max-width: 620px;
+        }
+
+        .content h1 {
+            color: var(--white-color);
+            font-size: 70px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        /* journey start */
+        .journey .card-section1{
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .journey .card-section1 .card1{
+            width: 460px;
+            margin: 12px;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--black-color);
+            font-family: var(--secondary-font);
+        }
+        .journey .card-section1 .card1 img{
+            max-width: 400px;
+            height: 300px;
+            border-radius: 8px;
+        }
+
+        .journey .card-section1 .card1 .card-body1 h3{
+            margin-bottom: 8px;
+            text-align: center;
+            
+        }
+        .journey h1  {
+            text-align: center;
+            font-size: 50px;
+        }
+        .journey p{
+            text-align: center; 
+        } 
+.journey .card-section2{
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .journey .card-section2 .card2{
+            width: 460px;
+            margin: 12px;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--black-color);
+            font-family: var(--secondary-font);
+        }
+        .journey .card-section2 .card2 img{
+            max-width: 400px;
+            height: 300px;
+            border-radius: 8px;
+        }
+        .journey .card-section2 .card2 .card-body2 h3{
+            margin-bottom: 8px;
+            text-align: center;
+            
+        }
+        .about h1{
+            text-align: center; 
+            font-size: 50px;
+        }
+          /* journey end */
+    </STYLe>
+</head>
+
+<body>
+    <!-- /*  design the webpage start */ -->
+    <div class="container">
+        <nav>
+            <img class="logo" src="logotravel.png" alt="">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">OFFERS</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>TRAVEL</h1>
+            <p>Embark on a journey of a lifeline and explore the world's most breathtaking with our expert travel
+                advice. From exotic beaches to culture wonders, we've got you covered with our comprehensive travel
+                guides and insider tips.</p>
+            <button class="btn">Read more</button>
+
+        </div>
+    </div>
+    <!-- /*  design the webpage end */ -->
+
+    <!-- journey image start -->
+    <div class="journey">
+                <h1>Start your journey</h1>
+        <p>The most searched countries in march</p>
+        <div class="card-section1">
+            <div class="card1">
+                <img src="buddist temple.jpg" alt="">
+                <div class="card-body1">
+                    <h3>Buddist temple</h3>
+                </div>
+           </div>
+
+           <div class="card1">
+            <img src="landmark-camera-architecture-view-woman.jpg" alt="">
+            <div class="card-body1">
+                <h3>landmark</h3>
+            </div>
+           </div> 
+
+<div class="card1">
+<img src="ram mandir.jpg" alt="">
+    <div class="card-body1">
+<h3>ram mandir</h3>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="journey">
+<div class="card-section2">
+<div class="card2">
+    <img src="snow covered mountain.jpg" alt="">
+<div class="card-body2">
+<h3>Snow covered mountain</h3>
+</div>
+</div>
+
+<div class="card2">
+    <img src="sri ranganathaswamy.jpg" alt="">
+    <div class="card-body2">
+        <h3>sri ranganathaswamy</h3>
+    </div>
+</div>
+
+<div class="card2">
+    <img src="washington usa.jpg" alt="">
+    <div class="card-body2">
+<h3>washington</h3>
+    </div>
+</div>
+</div>
+</div>
+<!-- journey image start -->
+
+<!-- /about section -->
+<div class="about">
+  <h1>About us</h1>
+            <p>We are passionate travelers who believe that the world is meant to be explored. Our mission is to inspire
+            and empower people to travel more, discover new cultures, and create unforgettable memories.</p>
+        <p>At Traveler's Website, we provide valuable travel tips, destination guides, and travel stories to help
+            you plan your next adventure with confidence. Whether you're a seasoned traveler or embarking on your
+            first journey,
+
+</div>
+</body>
+
+</html>
